@@ -6,7 +6,7 @@ enum Operation
 }
 public class Test1 {
 
-    public static double basicCalculator(final Operation operation, final int num1, final int num2){
+    public static double basicCalculator(Operation operation, int num1, int num2){
         double result = 0;
 
         if (operation == Operation.ADD) {
@@ -21,6 +21,7 @@ public class Test1 {
             } else {
                 result = ((double) num1) / num2;
             }
+
         }
 
         return result;
